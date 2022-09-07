@@ -1,1 +1,11 @@
 CS4261 Programming 1 Assignment
+
+Gets data from https://pokeapi.co/
+
+First follow https://reactnative.dev/docs/environment-setup using "React Native CLI Quickstart"
+
+Run
+"npx react-native start"
+and
+"npx react-native ios"
+to run
