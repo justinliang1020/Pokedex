@@ -15,15 +15,17 @@ const Entry = () => {
         },
     });
 
+    // app data
     const [input, setInput] = useState("pikachu");
     const [initialized, setInitialized] = useState(false);
 
-    // change default values
+    // displayed data
     const [name, setName] = useState("");
     const [id, setId] = useState(0);
     const [spriteUrl, setSpriteUrl] = useState("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png");
     const [likes, setLikes] = useState(0);
 
+    // change the current displayed pokemon to be based on input box
     changePokemon = () => {
         var parsedInput = input.toLowerCase();
         fetch(`https://pokeapi.co/api/v2/pokemon/${parsedInput}`)
@@ -50,6 +52,7 @@ const Entry = () => {
             })
     }
 
+    // initialize default data at app startup
     if (!initialized) {
         changePokemon();
         setInitialized(true);
@@ -57,6 +60,7 @@ const Entry = () => {
 
     // have "initialize" variable and only call when not initialized
 
+    // update "likes" in backend database
     likePokemon = () => {
         // increment likes
         // post pokemon api like
@@ -82,6 +86,7 @@ const Entry = () => {
             <Text>Hello, {name}!</Text>
             <Text>ID: {id}</Text>
             <Text>Likes: {likes}</Text>
+            {/* Add a new field here! */}
             <Image style={styles.tinyLogo} source={{ uri: spriteUrl }} />
             <TextInput onChangeText={setInput} value={input} />
             <Button onPress={this.changePokemon} title="Search" />

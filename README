@@ -4,8 +4,15 @@ Gets data from https://pokeapi.co/
 
 First follow https://reactnative.dev/docs/environment-setup using "React Native CLI Quickstart"
 
-Run
+
+To run use:
 "npx react-native start"
 and
 "npx react-native ios"
-to run
+in separate terminals
+
+
+How to contribute:
+
+1. go to src/Components/Entry.js
+2. edit any code in that file and re-run
