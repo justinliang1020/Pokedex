@@ -1,4 +1,4 @@
-###### CS4261 Programming 1 Assignment
+# CS4261 Programming 1 Assignment
 
 ![App](assets/app.png)
 
