@@ -19,8 +19,8 @@ const Entry = () => {
     const [initialized, setInitialized] = useState(false);
 
     // change default values
-    const [name, setName] = useState("pikachu");
-    const [id, setId] = useState(25);
+    const [name, setName] = useState("");
+    const [id, setId] = useState(0);
     const [spriteUrl, setSpriteUrl] = useState("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png");
     const [likes, setLikes] = useState(0);
 
