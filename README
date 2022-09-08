@@ -1,9 +1,13 @@
-CS4261 Programming 1 Assignment
+######CS4261 Programming 1 Assignment
 
+![App](assets/app.png)
+
+Pokedex app that displays pokemon input built using React Native and deployed to IOS
 Gets data from https://pokeapi.co/
 
-First follow https://reactnative.dev/docs/environment-setup using "React Native CLI Quickstart"
+Developer info:
 
+First follow https://reactnative.dev/docs/environment-setup using "React Native CLI Quickstart" to get dev environment
 
 To run use:
 "npx react-native start"
