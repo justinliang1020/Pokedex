@@ -83,6 +83,7 @@ const Entry = () => {
     return (
         <View
             style={styles.container}>
+            <Text>The Best Pokedex App Ever</Text>
             <Text>Hello, {name}!</Text>
             <Text>ID: {id}</Text>
             <Text>Likes: {likes}</Text>
